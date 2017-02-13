@@ -4,7 +4,20 @@
              x:Class="XFormsOidcTest.MainPage">
 
   <ScrollView VerticalOptions="FillAndExpand">
-    <Editor x:Name="resultsText" Text="results will be here" VerticalOptions="FillAndExpand" />
+    <StackLayout>
+      <Button Text="Start" Clicked="Start_Clicked" />
+      <Button Text="Call" Clicked="Call_Clicked" />
+
+      <Label Text="IdentityServerUrl" />
+      <Label x:Name="IdentityServerUrlLabel" />
+
+      <Label Text="AccessToken" />
+      <Editor x:Name="AccessTokenText" HeightRequest="100" />
+
+      <Label Text="results" />
+      <Editor x:Name="resultsText" Text="results will be here" VerticalOptions="FillAndExpand" HeightRequest="1000" />
+
+    </StackLayout>
   </ScrollView>
 
 </ContentPage>
